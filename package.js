@@ -1,7 +1,8 @@
 Package.describe({
 	name: "krstffr:ttl-memoize",
 	summary: "Create memoized functions with TTL on the server and client.",
-	version: "0.0.1"
+	version: "0.0.1",
+	git: "https://github.com/krstffr/meteor-ttl-memoize.git"
 });
 
 Package.onUse(function (api) {

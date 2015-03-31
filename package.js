@@ -18,6 +18,6 @@ Package.onTest(function (api) {
   
   api.use(["tinytest", "krstffr:ttl-memoize"]);
   
-  api.addFiles("tests/ttl-memoize.js", ["client", "server"]);
+  api.addFiles("tests/ttl-memoize-tests.js", ["client", "server"]);
 
 });

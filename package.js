@@ -1,6 +1,6 @@
 Package.describe({
-	name: "krstffr:fn-cacher",
-	summary: "Cacher wrapper function for functions (with TTL!)",
+	name: "krstffr:ttl-memoize",
+	summary: "Create memoized functions with TTL on the server and client.",
 	version: "0.0.1"
 });
 
@@ -8,7 +8,7 @@ Package.onUse(function (api) {
 
 	api.versionsFrom("METEOR@0.9.0");
 
-	api.addFiles(["fn-cacher.js"], ["client", "server"]);
+	api.addFiles(["ttl-memoize.js"], ["client", "server"]);
 
 	api.export(["ttlMemoize"], ["client", "server"]);
 
@@ -16,8 +16,8 @@ Package.onUse(function (api) {
 
 Package.onTest(function (api) {
   
-  api.use(["tinytest", "krstffr:fn-cacher"]);
+  api.use(["tinytest", "krstffr:ttl-memoize"]);
   
-  api.addFiles("tests/fn-cacher-tests.js", ["client", "server"]);
+  api.addFiles("tests/ttl-memoize.js", ["client", "server"]);
 
 });
